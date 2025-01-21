@@ -115,89 +115,89 @@
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+      
+      
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Abhinav Sahu</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Abhinav Sahu</a>
+          <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Abhinav Sahu</span></h1>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+              <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home-section" class="hero">
+          <div class="home-slider  owl-carousel">
+           <div class="slider-item ">
+            <div class="overlay"></div>
+             <div class="container">
+              <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about-me.png);">
+                 <div class="overlay"></div>
+                </div>
+                  <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="text">
+                        <span class="subheading">Hello!</span>
+                        <h1 class="mb-4 mt-3">I'm <span>Abhinav Sahu</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+                        <!-- Element to contain animated typing -->
+                        <span id="typing-animation"></span>
 
-						<script>
+                        <script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                        // Initialize the typing animation
+                        const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Grad Student  ',
-						'Ex - Data Scientist Intern  ',
-						'Ex - Data Analyst   ',
-						];
+                        // Create an array of typing text
+                        const typingTexts = [
+                        'Grad Student  ',
+                        'Ex - Data Scientist Intern  ',
+                        'Ex - Data Analyst   ',
+                        ];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                        // Create a function to display the typing animation for a given text
+                        function playTypingAnimation(text) {
+                        // Loop through each character and add it to the element
+                        for (let i = 0; i < text.length; i++) {
+                            setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                            }, i * 200); // Increase the delay to slow down the typing animation
+                        }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                        // Once the animation is complete, reset the text and start over
+                        setTimeout(() => {
+                            typingAnimationElement.textContent = '';
+                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                        }, text.length * 200);
+                        }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                        // Start the typing animation loop
+                        playTypingAnimation(typingTexts[0]);
 
-						</script>
+                        </script>
 
-						<br>
-						<br>
-			            <h2>A Data Professional</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/abhinavsahu2604/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/AbhinavSahu2604" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+                        <br>
+                        <br>
+                        <h2>A Data Professional</h2>
+                        <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                        <!-- <br> -->
+                        <p><a href="https://www.linkedin.com/in/abhinavsahu2604/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+                            <a href="https://github.com/AbhinavSahu2604" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
     </section>
 
 
@@ -227,244 +227,244 @@
 									</div>
 								  </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Python</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Tableau</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>SQL</span> <span class="pull-right">95%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Python</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Tableau</span> <span class="pull-right">90%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
 
-									<span>Power BI</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
+                                    <span>Power BI</span> <span class="pull-right">90%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
 
-									<span>Advanced Excel</span> <span class="pull-right">100%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Generative AI</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>As a data professional with over 4 years of experience in the field of Business Intelligence, Machine Learning, and Generative AI, I bring expertise in Data Warehousing, extracting, transforming, and loading (ETL) data, conducting statistical analyses, trend analysis, forecasting, as well as creating impactful data visualizations dashboards to drive informed decision-making.
-									<!-- Authorized to work in the U.S., I am actively seeking full-time opportunities where my skills and expertise can be leveraged to drive meaningful impact within organizations and communities.</p> -->
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Languages:</span> <span>Python, R, SQL, Pyspark</span></li>
-									<li class="d-flex"><span>DBMS:</span> <span>SQL (MySQL,PostgreSQL,Oracle), NoSQL (MongoDB)   </span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Tableau, Power BI(DAX), Adobe Analytics, Google Analytics, Looker Studio, Microsoft Excel, Alteryx, Amazon Quicksight  </span></li>
-									<li class="d-flex"><span>Warehousing:</span> <span>Snowflake, Redshift, BigQuery, Azure Synapse</span></li>
-									<li class="d-flex"><span>Big Data:</span> <span>Spark, Hive, Impala, Airflow, Git</span></li>
-									<li class="d-flex"><span>Agile Tools:</span> <span>Jira, Confluence, Zendesk</span></li>
-									<li class="d-flex"><span>Certifications:</span> <span>AWS Cloud Practitioner, DBT Fundamental, Google Analytics</span></li>
-									<li class="d-flex"><span>AI/ML Framework:</span> <span>NumPy, Pandas, Matplotlib, PyTorch, Tensorflow, Keras, Hugging Face, Open AI,GPT, BERT, Scikit-learn, XGBoost/LightGBM, spaCy, NLTK </span></li>
-									<li class="d-flex"><span>Courses:</span> <span>Database Management, Applied Machine Learning, Applied Natural Language Processing, Data Visualization, Predictive Analytics, Applied Econometrics and Time Series Analysis </span></li>
-									
-								</ul>
-							</div>
-						</div>
+                                    <span>Advanced Excel</span> <span class="pull-right">100%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Machine Learning</span> <span class="pull-right">85%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Generative AI</span> <span class="pull-right">80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+                                
+                                <p>As a data professional with over 4 years of experience in the field of Business Intelligence, Machine Learning, and Generative AI, I bring expertise in Data Warehousing, extracting, transforming, and loading (ETL) data, conducting statistical analyses, trend analysis, forecasting, as well as creating impactful data visualizations dashboards to drive informed decision-making.
+                                    <!-- Authorized to work in the U.S., I am actively seeking full-time opportunities where my skills and expertise can be leveraged to drive meaningful impact within organizations and communities.</p> -->
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Languages:</span> <span>Python, R, SQL, Pyspark</span></li>
+                                    <li class="d-flex"><span>DBMS:</span> <span>SQL (MySQL,PostgreSQL,Oracle), NoSQL (MongoDB)   </span></li>
+                                    <li class="d-flex"><span>BI Tools:</span> <span>Tableau, Power BI(DAX), Adobe Analytics, Google Analytics, Looker Studio, Microsoft Excel, Alteryx, Amazon Quicksight  </span></li>
+                                    <li class="d-flex"><span>Warehousing:</span> <span>Snowflake, Redshift, BigQuery, Azure Synapse</span></li>
+                                    <li class="d-flex"><span>Big Data:</span> <span>Spark, Hive, Impala, Airflow, Git</span></li>
+                                    <li class="d-flex"><span>Agile Tools:</span> <span>Jira, Confluence, Zendesk</span></li>
+                                    <li class="d-flex"><span>Certifications:</span> <span>AWS Cloud Practitioner, DBT Fundamental, Google Analytics</span></li>
+                                    <li class="d-flex"><span>AI/ML Framework:</span> <span>NumPy, Pandas, Matplotlib, PyTorch, Tensorflow, Keras, Hugging Face, Open AI,GPT, BERT, Scikit-learn, XGBoost/LightGBM, spaCy, NLTK </span></li>
+                                    <li class="d-flex"><span>Courses:</span> <span>Database Management, Applied Machine Learning, Applied Natural Language Processing, Data Visualization, Predictive Analytics, Applied Econometrics and Time Series Analysis </span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
 
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/abhinavsahu2604/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                            <div class="text">
+                                <p class="mb-4">
+                                    <span class="number" data-number="10">0</span> <span>+</span>
+                                    <span>&nbsp; Projects completed</span>
+                                </p>
+                                <p><a href="https://www.linkedin.com/in/abhinavsahu2604/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
-	
+    
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
+            <h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
             <p>
-				With 4 years of experience as a data professional, I am currently pursuing a Master’s in Business Analytics and Artificial Intelligence at UT Dallas, graduating in May 2025. Eligible to work in the U.S., I am actively seeking full-time opportunities to apply my expertise in driving data-driven innovation and delivering impactful solutions.</p>
+                With 4 years of experience as a data professional, I am currently pursuing a Master’s in Business Analytics and Artificial Intelligence at UT Dallas, graduating in May 2025. Eligible to work in the U.S., I am actively seeking full-time opportunities to apply my expertise in driving data-driven innovation and delivering impactful solutions.</p>
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jun 2024 - Nov 2024</span>
-						<h2>Data Scientist Intern</h2>
-						<span class="position">Eon Collective, USA</span>
-						<p class="mt-4">Eon Collective is an consulting firm specializing in AI-driven solutions and data engineering for businesses excellence. 
-							<ul>
-								<li>Engineered a Python-based ChatBot for Oracle to Snowflake SQL script migration, utilizing Gradio, Chroma, LLM, and Streamlit, optimizing script conversion accuracy and operational efficiency by 30%.</li>
-								<li>Created an AI ChatBot using the Vanna framework with Amazon QuickSight and Amazon Q, to automate SQL generation and deliver detailed visualizations, achieving seamless dataset creation and 25% reporting time reduction.</li>
-								<!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
-							</ul>
-						</p>
-					</div>
+        <div class="row">
+            <h1 class="big-4">Experience</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+        
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Jun 2024 - Nov 2024</span>
+                        <h2>Data Scientist Intern</h2>
+                        <span class="position">Eon Collective, USA</span>
+                        <p class="mt-4">Eon Collective is an consulting firm specializing in AI-driven solutions and data engineering for businesses excellence. 
+                            <ul>
+                                <li>Engineered a Python-based ChatBot for Oracle to Snowflake SQL script migration, utilizing Gradio, Chroma, LLM, and Streamlit, optimizing script conversion accuracy and operational efficiency by 30%.</li>
+                                <li>Created an AI ChatBot using the Vanna framework with Amazon QuickSight and Amazon Q, to automate SQL generation and deliver detailed visualizations, achieving seamless dataset creation and 25% reporting time reduction.</li>
+                                <!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+                            </ul>
+                        </p>
+                    </div>
 
-				</div>
+                </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Mar 2022 – Nov 2022</span>
-						<h2>Research Associate</h2>
-						<span class="position">Flyhomes, India</span>
-						<p class="mt-4">Flyhomes is a real estate startup that simplifies the home-buying process by offering innovative solutions. 
-							<ul>
-								<li>Analyzed customer behavior through data extraction using SQL and Snowflake followed by data transformation in Python, and visualized actionable insights in Tableau, resulting in a 20% increase in customer retention.</li>
-								<li>Conducted housing price market analysis using Python and Tableau, leveraging historical and current market data to identify pricing trends and forecast demand, improving property valuations and boosting revenue by 15%.</li>
-								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-							</ul>
-						</p>
-					</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Mar 2022 – Nov 2022</span>
+                        <h2>Research Associate</h2>
+                        <span class="position">Flyhomes, India</span>
+                        <p class="mt-4">Flyhomes is a real estate startup that simplifies the home-buying process by offering innovative solutions. 
+                            <ul>
+                                <li>Analyzed customer behavior through data extraction using SQL and Snowflake followed by data transformation in Python, and visualized actionable insights in Tableau, resulting in a 20% increase in customer retention.</li>
+                                <li>Conducted housing price market analysis using Python and Tableau, leveraging historical and current market data to identify pricing trends and forecast demand, improving property valuations and boosting revenue by 15%.</li>
+                                <!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+                            </ul>
+                        </p>
+                    </div>
 
-				</div>
+                </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jun 2020 – Mar 2022</span>
-						<h2>Senior Executive</h2>
-						<span class="position">Vestian Global Workplace Solution, India</span>
-						<p class="mt-4">
-							Vestian Global provides workplace solutions, specializing in real estate services optimizing workplace efficiency.
-							<ul>
-								<li>Visualized project timelines, resource allocation, and potential bottlenecks using Tableau dashboards by integrating qualitative and quantitative data, leading to a 7% improvement in project completion rates.</li>
-								<li>Collaborated with cross functional teams to manage and define the project scope, processes, and deliverables through Jira and Confluence, ensuring project alignment through effective stakeholder management and tailored reporting.</li>
-								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-							</ul>
-						</p>
-					</div>
-				
-				</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Jun 2020 – Mar 2022</span>
+                        <h2>Senior Executive</h2>
+                        <span class="position">Vestian Global Workplace Solution, India</span>
+                        <p class="mt-4">
+                            Vestian Global provides workplace solutions, specializing in real estate services optimizing workplace efficiency.
+                            <ul>
+                                <li>Visualized project timelines, resource allocation, and potential bottlenecks using Tableau dashboards by integrating qualitative and quantitative data, leading to a 7% improvement in project completion rates.</li>
+                                <li>Collaborated with cross functional teams to manage and define the project scope, processes, and deliverables through Jira and Confluence, ensuring project alignment through effective stakeholder management and tailored reporting.</li>
+                                <!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+                            </ul>
+                        </p>
+                    </div>
+                
+                </div>
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jan 2018 – Jul 2018</span>
-						<h2>Associate Software Engineer</h2>
-						<span class="position">Accenture, India</span>
-						<p class="mt-4">
-							Accenture is a Fortune 500 company, known for its expertise in digital transformation, and technology consulting.
-							<ul>
-								<li>Built predictive models utilizing machine learning algorithms to raise the accuracy of customer turnover and lifetime value projections, leading to a 15% decrease in churn rate and a 10% increase in customer lifetime value.</li>
-								<!-- <li>Collaborated with cross functional teams to manage and define the project scope, processes, and deliverables through Jira and Confluence, ensuring project alignment through effective stakeholder management and tailored reporting.</li> -->
-								<!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-							</ul>
-						</p>
-					</div>
-				
-				</div> 
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Jan 2018 – Jul 2018</span>
+                        <h2>Associate Software Engineer</h2>
+                        <span class="position">Accenture, India</span>
+                        <p class="mt-4">
+                            Accenture is a Fortune 500 company, known for its expertise in digital transformation, and technology consulting.
+                            <ul>
+                                <li>Built predictive models utilizing machine learning algorithms to raise the accuracy of customer turnover and lifetime value projections, leading to a 15% decrease in churn rate and a 10% increase in customer lifetime value.</li>
+                                <!-- <li>Collaborated with cross functional teams to manage and define the project scope, processes, and deliverables through Jira and Confluence, ensuring project alignment through effective stakeholder management and tailored reporting.</li> -->
+                                <!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+                            </ul>
+                        </p>
+                    </div>
+                
+                </div> 
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jun 2017 – Dec 2017</span>
-						<h2>Real Estate Analyst</h2>
-						<span class="position">Maple Shelters, India</span>
-						<p class="mt-4">Maple Shelters is a Pune-based real estate developer specializing in affordable housing projects.
-							<ul>
-								<li>Constructed interactive Power BI dashboards to analyze key real estate metrics, saving $1M annually.</li>
-								<!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">Jun 2017 – Dec 2017</span>
+                        <h2>Real Estate Analyst</h2>
+                        <span class="position">Maple Shelters, India</span>
+                        <p class="mt-4">Maple Shelters is a Pune-based real estate developer specializing in affordable housing projects.
+                            <ul>
+                                <li>Constructed interactive Power BI dashboards to analyze key real estate metrics, saving $1M annually.</li>
+                                <!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+                                <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-		<br>
-		<br>
+        <br>
+        <br>
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2025</span>
-    					<h2>MS, Business Analytics & AI</h2>
-    					<span class="position">The University of Texas at Dallas</span>
-    					<p class="mt-4">Grade: 3.81</p>
-    				</div>
-    			</div>
+        <div class="row">
+            <h1 class="big-4">Education</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2023-2025</span>
+                        <h2>MS, Business Analytics & AI</h2>
+                        <span class="position">The University of Texas at Dallas</span>
+                        <p class="mt-4">Grade: 3.81</p>
+                    </div>
+                </div>
 
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2020</span>
-    					<h2>MS, Construction Management</h2>
-    					<span class="position">NICMAR</span>
-    					<p class="mt-4">Grade: 3.58</p>
-    				</div>
-				</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2018-2020</span>
+                        <h2>MS, Construction Management</h2>
+                        <span class="position">NICMAR</span>
+                        <p class="mt-4">Grade: 3.58</p>
+                    </div>
+                </div>
 
 
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2013-2017</span>
-    					<h2>Bachelors of Engineering</h2>
-    					<span class="position">PES University</span>
-    					<p class="mt-4">Grade: 3.56</p>
-    				</div>
-				</div>
-    		</div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2013-2017</span>
+                        <h2>Bachelors of Engineering</h2>
+                        <span class="position">PES University</span>
+                        <p class="mt-4">Grade: 3.56</p>
+                    </div>
+                </div>
+            </div>
 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ftco-animate">
+                    <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+                </div>
+            </div>
+        </div>
     </section>
 
    
@@ -480,7 +480,7 @@
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+            <div class="blog-entry justify-content-end">
               <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -491,7 +491,7 @@
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+            <div class="blog-entry justify-content-end">
               <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -502,7 +502,7 @@
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+            <div class="blog-entry">
               <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -513,38 +513,38 @@
             </div>
           </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
+    <br>
+        <!-- added justify-content-center to center align the last two projects -->
+        <div class="row d-flex justify-content-center">  
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+                </a>
+                <div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
+                  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+                  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+                </a>
+                <div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
+                  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+                  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-		<div class="row d-md-flex align-items-center">
+        <div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -579,27 +579,27 @@
           </div>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+            <!-- <div class="container"> -->
+                <div class="row justify-content-center">
+                    <div class="col-md-7 ftco-animate text-center">
+                        <h2>More projects on<span> Github  </span> </h2>
+                        <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+                        <br>
+                        <p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
 
 
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -609,79 +609,79 @@
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Bengaluru, India</p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-map-signs"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p>Bengaluru, India</p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">Contact Number</h3>
+                <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
+              </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-globe"></span>
+                </div>
+                <h3 class="mb-4">Download Resume</h3>
+                <p><a href="#">resumelink</a></p>
+              </div>
           </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-7 ftco-animate text-center">
+                    <h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+                </div>
+            </div>
+                <br>
+                    <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                      <li class="ftco-animate normal-txt">Find me on  </li>
+                      <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+                      <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
+                      <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                <br>
+           </div>
    </div>
  </section>
 
 
  
-	
+    
     <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
   <!-- loader -->
@@ -705,3 +705,4 @@
     
   </body>
 </html>
+
